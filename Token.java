@@ -1,10 +1,10 @@
 package minicompilateurjs;
 
 public class Token {
-    public String type;   // Ex: MOT_CLE, NOMBRE, IDENTIFIANT, OPERATEUR
-    public String valeur; // La chaine réelle lue (ex: "var", "12", "age")
-    public int ligne;     // Le numéro de ligne (pour afficher les erreurs)
-
+    public String type;   
+    public String valeur; 
+    public int ligne;     
+    
     public Token(String type, String valeur, int ligne) {
         this.type = type;
         this.valeur = valeur;
@@ -13,7 +13,8 @@ public class Token {
 
     @Override
     public String toString() {
-        // Format d'affichage : Ligne X : <TYPE, valeur>
+        
         return "Ligne " + ligne + " : <" + type + ", " + valeur + ">";
     }
+
 }
